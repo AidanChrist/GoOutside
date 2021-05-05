@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+	<link rel="manifest" href="manifest.json">
+
+    <title>Google Maps Project</title>
+
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIUl98uvhky5PEC5sEX5Zge1jyuboeUmY&libraries=places"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+     
+    <h1>
+      Get Outside? Visit a Park?
+    </h1>
+    
+    <input id="radius" type="text" placeholder="Search Radius..">
+    <button onclick="setRadius()">
+      Set Radius
+    </button>
+    
+    <div id="map">
+      
+    </div>
+    
+  </body>
+</html>
